@@ -57,12 +57,12 @@ function addStars() {
 Array(1000).fill().forEach(addStars);
 
 const spaceTexture = (scene.background = new THREE.TextureLoader().load(
-  "./img/space2.jpg"
+  "../img/space2.jpg"
 ));
 scene.background = spaceTexture;
 
 // cubo
-const michiTexture = new THREE.TextureLoader().load("./img/michi.jpg");
+const michiTexture = new THREE.TextureLoader().load("../img/michi.jpg");
 
 const michi = new THREE.Mesh(
   new THREE.BoxGeometry(2, 2, 2),
@@ -71,7 +71,7 @@ const michi = new THREE.Mesh(
 scene.add(michi);
 
 //moon
-const moonTexture = new THREE.TextureLoader().load("./img/moon.jpg");
+const moonTexture = new THREE.TextureLoader().load("../img/moon.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
